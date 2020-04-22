@@ -1,2 +1,2 @@
-# An-lises-Ecol-gicas
+# Analises Ecologicas
 Análises estatísticas direcionadas para estudos ecológicos

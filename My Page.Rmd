@@ -1,0 +1,39 @@
+---
+title: "Analises de Comunidades"
+author: "Meyer, E"
+date: "22 de abril de 2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Importacao de dados
+
+Primeiramente vamos importar os dados:
+
+Usaremos o banco de dados "Doubs.spe" e "Doubs.env" do pacote ade4 (Verneaux, 1973).
+
+```{r cars}
+library(ade4)
+data(doubs)
+env<-doubs$env
+spe<-doubs$species
+env[1:5,]
+spe[1:5,]
+
+```
+
+## Plotando graficos
+
+```{r pressure, echo=FALSE}
+boxplot(env)
+```
+
+
+## Referencias
+
+Verneaux, J. (1973) Cours d'eau de Franche-Comte (Massif du Jura). Recherches ecologiques sur le reseau hydrographique du Doubs. Essai de biotypologie. These d'etat, Besancon. 1-257.
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
